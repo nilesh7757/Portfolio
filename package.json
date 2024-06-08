@@ -1,9 +1,11 @@
 {
   "name": "portfolio",
+  "homepage":"https://nilesh7757.github.io/Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "deploy": "next build && next export && npx gh-pages -d out",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
