@@ -25,7 +25,7 @@ const TypedText = () => {
     <div className='mt-36 px-20 flex flex-col'>
     <div className='text-5xl'>
       <h1 className='font-medium'>Hey There,</h1>
-      <h1 className='mt-8 font-medium'>I'm Nilesh <span className='text-[#FF2D00]'>Mori</span></h1>
+      <h1 className='mt-8 font-medium'>Im Nilesh <span className='text-[#FF2D00]'>Mori</span></h1>
       <h1 className='mt-8 font-medium'>I am In <span className="text-blue-500" ref={el}></span></h1>
       <button className='bg-blue-500 mt-8 hover:font-bold hover:bg-blue-700 text-xl px-3 py-1 rounded-lg text-white'>About Me</button>
     </div>
