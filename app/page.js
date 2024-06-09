@@ -6,7 +6,7 @@ import Backgroud from "./components/backgroud";
 export default function Home() {
   return (
    <>
-   <main className="relative w-[80%] mx-auto">
+   <main className="relative mx-auto">
       <Backgroud/>
       <Navbar/>
       <TypedText/>

@@ -1,8 +1,28 @@
-.navbar{
+.Navbar{
+    display: none;
+}
+
+.nav{
     display: none;
 }
 @media  (max-width: 800px)  {
     .header{
         justify-content: center;
+    }
+  }
+@media  (min-width: 800px)  {
+    .Navbar{
+        display:flex;
+    }
+    .hanger{
+        display: none;
+    }
+
+    .Nav{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-between;
     }
   }
