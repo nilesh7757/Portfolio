@@ -28,7 +28,7 @@ const TypedText = ()=>{
           height={40}
         />
         </div>
-      <div className="text-3xl items-center text-center w-full lg:items-start  top-[200px] relative lg:left-20  md:text-5xl {inter.className} font-bold flex flex-col lg:top-16  p-10 gap-y-5 sm:gap-y-12">
+      <div className="text-3xl items-center text-center w-full lg:items-start  top-[300px] relative lg:left-20  md:text-5xl {inter.className} font-bold flex flex-col lg:top-16  p-10 gap-y-5 sm:gap-y-12">
         <h1 className='text-purple-700'>Hey</h1> 
         <h1>Nilesh <span className='text-blue-500'>Mori</span></h1>
         <h1><span className='text-red-500'>Fullstack</span> Webdevloper</h1>
