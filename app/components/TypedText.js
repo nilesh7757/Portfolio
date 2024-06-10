@@ -1,10 +1,8 @@
 // components/TypedText.js
 "use client"
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { FaArrowDownLong} from "react-icons/fa6";
 import Image from 'next/image';
-import HorizontalNav from './HorizontalNav';
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -42,7 +40,7 @@ const TypedText = ()=>{
           <div className="rounded-full bg-blue-500 flex justify-center items-center w-[1em] h-[1em]"><Link href="https://x.com/Programmer7757?t=VP9FEJwB8i_RPSXHwS7chw&s=08"><FaXTwitter fill='white'  size={"0.7em"} /></Link></div>
       </div>
       </div>
-        
+      <div className='w-full h-1 absolute bottom-0 bg-gray-400'></div>
     </div>
    </>
   );

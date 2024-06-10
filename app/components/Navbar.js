@@ -13,10 +13,10 @@ const Navbar = () => {
   const [icon ,setIcon] = useState(<GiHamburgerMenu/>)
   const showNav = ()=>{
     if(isVisible){
-      setIcon(<HiX />)
+      setIcon(<GiHamburgerMenu/>)
     }
     else{
-      setIcon(<GiHamburgerMenu/>)
+      setIcon(<HiX />)
     }
     setVisible(!isVisible);
   }

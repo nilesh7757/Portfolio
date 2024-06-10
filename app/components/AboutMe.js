@@ -9,7 +9,7 @@ const AboutMe = () => {
     <div id="About" className='h-[100vh] w-full mx-auto'>
         <h2 className='text-xl md:text-3xl mx-auto text-center font-bold'>About Me</h2>
         <div className='flex flex-col lg:flex-row w-full mx-auto justify-center items-center lg:justify-around py-5'>
-        <div className='p-4 relative rounded-lg top-5 w-[50%] Box'>
+        <div className='p-4 relative rounded-lg top-5 lg:w-[50%] w-[75%] Box'>
           <h3 className='text-xl font-semibold mb-1'><span className="text-red-600 ">Nilesh </span> Mori</h3>
           <div className='flex'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quos assumenda dolores, ipsum at praesentium delectus beatae commodi id dolorum ullam, laborum nesciunt eveniet aliquid inventore, saepe adipisci necessitatibus et autem! Suscipit perspiciatis explicabo id quod quia iste a at dolorum impedit unde ducimus commodi corrupti cum, facilis, dolore, fuga laboriosam magni expedita! Nihil.</div>
 
