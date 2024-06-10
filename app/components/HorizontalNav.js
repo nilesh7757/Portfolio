@@ -6,7 +6,7 @@ const HorizontalNav = () => {
         {/* <h1>HELLO</h1> */}
       <ul className='text-xl flex flex-col text-black gap-8'>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Home</Link></li>
-            <li className='hover:font-bold hover:text-blue-500'><Link href = "#">About Me</Link></li>
+            <li className='hover:font-bold hover:text-blue-500'><Link href = "#About">About Me</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Skills</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Education</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Contact Me</Link></li>

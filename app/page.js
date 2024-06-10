@@ -14,6 +14,8 @@ export default function Home() {
       <TypedText/>
       <Line/>
       <AboutMe/>
+      <Line/>
+
    </main>
    </>
   );

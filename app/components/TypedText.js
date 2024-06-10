@@ -2,6 +2,7 @@
 "use client"
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { FaArrowDownLong} from "react-icons/fa6";
 import Image from 'next/image';
 import HorizontalNav from './HorizontalNav';
 import { FaGithub } from "react-icons/fa";
@@ -32,7 +33,7 @@ const TypedText = ()=>{
         <h1 className='text-purple-700'>Hey</h1> 
         <h1>Nilesh <span className='text-blue-500'>Mori</span></h1>
         <h1><span className='text-red-500'>Fullstack</span> Webdevloper</h1>
-        <button className='bg-blue-500 hover:bg-blue-800 text-xl w-fit px-5 py-2 rounded-lg text-white'>About Me</button>
+        <button className='bg-blue-500 hover:bg-blue-800 text-xl w-fit  px-5 py-2 rounded-lg text-white'><Link className='flex items-center gap-x-1' href="#About">About Me <FaArrowDownLong  /></Link></button>
       <div className="contacts flex gap-x-3">
           <div><Link href="https://github.com/nilesh7757"><FaGithub fill='#3b82f6' /></Link></div>
           <div><Link href="https://www.facebook.com/akash.mori.792/"><FaFacebook fill='#3b82f6'/></Link></div>
