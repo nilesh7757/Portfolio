@@ -6,8 +6,8 @@ const AboutMe = () => {
   return (
     <>
     {/* <div className='bg-red-500 mt-56 relative top-56'>Test Hi</div> */}
-    <div id="About" className='h-[100vh] w-full mx-auto'>
-        <h2 className='text-xl md:text-3xl mx-auto text-center font-bold'>About Me</h2>
+    <div id="About" className='h-[100vh] relative top-20 sm:top-0 flex flex-col justify-center w-full mx-auto'>
+        <h2 className='text-3xl sm:text-3xl mx-auto text-center font-bold'>About Me</h2>
         <div className='flex flex-col lg:flex-row w-full mx-auto justify-center items-center lg:justify-around py-5'>
         <div className='p-4 relative rounded-lg top-5 lg:w-[50%] w-[75%] Box'>
           <h3 className='text-xl font-semibold mb-1'><span className="text-red-600 ">Nilesh </span> Mori</h3>

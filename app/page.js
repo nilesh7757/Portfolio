@@ -12,6 +12,8 @@ export default function Home() {
   <Navbar />
   <div className="h-[100vh]">
     <TypedText />
+    <div className='w-full h-1 bg-gray-400'></div>
+
   </div>
   <div className="h-fit">
     <AboutMe />

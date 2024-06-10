@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className='text-2xl bg-black text-white size-10  flex justify-center items-center font-bold p-6 rounded-full'>NM</div>
         <div className=''>
           {<ul className='flex Navbar text-xl gap-4'>
-            <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Home</Link></li>
+            <li className='hover:font-bold hover:text-blue-500'><Link href = "#Home">Home</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#About">About Me</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Skills</Link></li>
             <li className='hover:font-bold hover:text-blue-500'><Link href = "#">Education</Link></li>
