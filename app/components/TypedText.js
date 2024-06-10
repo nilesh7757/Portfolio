@@ -20,16 +20,16 @@ const inter = Poppins({
 const TypedText = ()=>{
   return (
     <>
-    <div className="w-[100%] mx-auto h-[100vh] px-2 items-center lg:justify-between sm:mt-20 lg:mt-0 flex-col lg:flex">
-    <div className='absolute w-[100vw] lg:w-fit flex flex-col items-center lg:right-20 sm:top-16 top-28 lg:mt-[5vh] md:mt-[8vh] sm:mt-[6vh] mt-[0px] object-cover  h-[30px]'>
+    <div className="w-[100%]  static mx-auto overflow-hidden h-[100vh] px-2 sm:top-20 lg:top-0 ">
+    <div className='absolute w-[100vw] lg:w-fit flex flex-col items-center lg:right-20 top-20 lg:mt-[5vh] md:mt-[8vh] object-cover  h-[30px]'>
         <Image
-        className='rounded-full size-80 w-52 md:size-fit'
+        className='rounded-full size-80 w-52 h-fit lg:size-fit'
           src={"NileshMori.jpg"}
           width={300}
           height={40}
         />
         </div>
-      <div className="text-3xl items-center text-center w-full lg:items-start  top-[300px] relative lg:left-20  md:text-5xl {inter.className} font-bold flex flex-col lg:top-16  p-10 gap-y-5 sm:gap-y-12">
+      <div className="text-3xl items-center text-center w-full lg:items-start  top-[300px]   relative lg:left-20  md:text-4xl {inter.className} font-bold flex flex-col lg:top-16  p-10 lg:gap-y-12 gap-y-4">
         <h1 className='text-purple-700'>Hey</h1> 
         <h1>Nilesh <span className='text-blue-500'>Mori</span></h1>
         <h1><span className='text-red-500'>Fullstack</span> Webdevloper</h1>

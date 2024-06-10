@@ -8,15 +8,17 @@ import AboutMe from "./components/AboutMe";
 export default function Home() {
   return (
    <>
-   <main className="relative mx-auto">
-      <Backgroud/>
-      <Navbar/>
-      <TypedText/>
-      <Line/>
-      <AboutMe/>
-      <Line/>
-
-   </main>
+   <main className=" mx-auto">
+  <Backgroud />
+  <Navbar />
+  <div className="h-[100vh]">
+    <TypedText />
+  </div>
+  <div className="h-fit">
+    <AboutMe />
+  </div>
+  <div>Hi</div>
+</main>
    </>
   );
 }
