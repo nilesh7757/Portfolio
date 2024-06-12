@@ -1,0 +1,37 @@
+.s-intro{
+    bottom: unset;
+    height: fit-content;
+    top: 80px;
+}
+
+.home{
+    /* background: green; */
+    /* border: 2px solid rgb(0, 170, 255); */
+}
+
+@media only screen and (max-width: 1024px) {
+    .s-intro{
+        bottom: 0;
+        top:unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .home{
+        display: flex;
+        justify-content: center;
+     } 
+}
+
+@media only screen and (min-width: 550px) {
+    .s-intro{
+        bottom: 50px;
+    }
+}

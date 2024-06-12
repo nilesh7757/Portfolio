@@ -1,23 +1,26 @@
-import Image from "next/image";
-import Intro from "./components/Navbar";
-import TypedText from "./components/TypedText";
+// import Image from "next/image";
+// import Niles from "./components/Home";
+import Nilesh from "./components/Home";
 import Navbar from "./components/Navbar";
-import Backgroud from "./components/backgroud";
 import AboutMe from "./components/AboutMe";
+import Backgroud from "./components/backgroud";
+import Skills from "./components/Skills";
 export default function Home() {
   return (
    <>
-   <main className=" mx-auto">
-  <Backgroud />
-  <Navbar />
-  <div className="h-[100vh]">
-    <TypedText />
-    <div className='w-full h-1 bg-gray-400'></div>
+   <main className=" mx-auto relative top-0">
+    <div><Backgroud/></div>
+    <div className="nav sticky z-10 top-0"><Navbar/></div>
+    <div className="home bg-blue-50 h-[130vh] lg:h-[100vh]"><Nilesh /></div>
+    <div className="bg-gray-500 h-1 w-full"></div>
+    <div className="home bg-purple-150 w-full h-[130vh] lg:h-[100vh]"><AboutMe /></div>
+    <div className="bg-gray-500 h-1 w-full"></div>
+    <div className="home bg-green-50"><Skills /></div>
+    <div className="bg-gray-500 h-1 w-full"></div>
 
-  </div>
-  <div className="h-fit">
-    <AboutMe />
-  </div>
+
+
+
 </main>
    </>
   );

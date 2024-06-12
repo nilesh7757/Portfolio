@@ -1,27 +1,46 @@
+"use client"
 import React from 'react'
-import Link from 'next/link'
-import './About.css'
+import Image from 'next/image'
+// import { createContext } from 'react';
+import "./About.css"
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
   return (
     <>
-    {/* <div className='bg-red-500 mt-56 relative top-56'>Test Hi</div> */}
-    <div id="About" className='h-[100vh] relative top-20 sm:top-0 flex flex-col justify-center w-full mx-auto'>
-        <h2 className='text-3xl sm:text-3xl mx-auto text-center font-bold'>About Me</h2>
-        <div className='flex flex-col lg:flex-row w-full mx-auto justify-center items-center lg:justify-around py-5'>
-        <div className='p-4 relative rounded-lg top-5 lg:w-[50%] w-[75%] Box'>
-          <h3 className='text-xl font-semibold mb-1'><span className="text-red-600 ">Nilesh </span> Mori</h3>
-          <div className='flex'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam debitis quos assumenda dolores, ipsum at praesentium delectus beatae commodi id dolorum ullam, laborum nesciunt eveniet aliquid inventore, saepe adipisci necessitatibus et autem! Suscipit perspiciatis explicabo id quod quia iste a at dolorum impedit unde ducimus commodi corrupti cum, facilis, dolore, fuga laboriosam magni expedita! Nihil.</div>
-
-          </div>
-        <div className="img flex top-12 lg:top-0 relative right-0 Box rounded-lg overflow-hidden ">
-              <img src="About-D1.jpg" alt="About" />
-        </div>
-        </div>
-          <div className='w-fit text-2xl font-medium mx-auto relative top-12'>
-          <button className='py-1 px-2 Box text-white bg-blue-500 rounded-lg'><Link href="https://drive.google.com/file/d/1-3daVjRjyNBef14a1y9tAGienx3L0KPg/view?usp=sharing">Resume</Link></button>
-          </div>
+      <div id='About'  className='mx-24 lg:flex flex-col h-[100vh] lg:justify-center'>
+      <h2 className='text-3xl mx-auto text-center font-semibold underline underline-offset-4' >About Me</h2>
+    <div className='relative px-16 flex flex-col lg:flex-row lg:justify-between items-center'>
+      <motion.div
+      whileHover={{
+        scale:"1.05"
+      }}
+      className="Box lg:relative lg:left-48 rounded-lg h-[80] overflow-hidden w-[450] mt-7 bg-red-500  border-2 border-neutral-600 "><Image
+      src={"./About.png"}
+      width={"250"}
+      height={"30"}
+      alt='About'
+      ></Image></motion.div>
+      <motion.div 
+      whileHover={{
+        scale:"1.05"
+      }}
+      className="Box rounded-lg h-fit lg:h-[30vh] lg:w-[40vw]  w-[80vw] mt-7 p-2  border-2 border-neutral-600 ">
+        <h3 className='text-2xl font-medium'>Nilesh Mori</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam nobis error amet eaque alias! Exercitationem a vitae similique, dignissimos molestias sunt laborum, numquam natus, quod autem alias illum soluta! Omnis corrupti cupiditate dolor ea incidunt dolores voluptates, nam provident quasi aperiam fugiat aliquid deleniti eos.
+        </p>
+      </motion.div>
     </div>
+      <div className="btn w-full flex justify-center mt-5">
+      <motion.button
+       whileHover={{
+        scale:1.05,
+       }}
+       className='bg-blue-500 px-1 py-2 Box text-white font-semibold rounded-lg mx-auto'
+       >
+        Download CV</motion.button>
+      </div>
+      </div>
     </>
   )
 }
