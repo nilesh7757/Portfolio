@@ -8,9 +8,9 @@ import { motion } from 'framer-motion';
 const AboutMe = () => {
   return (
     <>
-      <div id='About'  className='mx-24 lg:flex flex-col h-[100vh] lg:justify-center'>
-      <h2 className='text-3xl mx-auto text-center font-semibold underline underline-offset-4' >About Me</h2>
-    <div className='relative px-16 flex flex-col lg:flex-row lg:justify-between items-center'>
+      <div id='About'  className='p-5 mx-24 lg:flex flex-col h-[100vh] lg:justify-center'>
+      <h3 className='text-2xl text-center font-semibold underline underline-offset-4'>About Me</h3>
+      <div className='relative px-16 flex flex-col lg:flex-row lg:justify-between items-center'>
       <motion.div
       whileHover={{
         scale:"1.05"
@@ -31,7 +31,7 @@ const AboutMe = () => {
         </p>
       </motion.div>
     </div>
-      <div className="btn w-full flex justify-center mt-5">
+      <div className="btn w-full flex justify-center mt-10 lg:mt-5">
       <motion.button
        whileHover={{
         scale:1.05,
