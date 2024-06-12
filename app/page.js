@@ -9,7 +9,7 @@ export default function Home() {
   return (
    <>
    <main className=" mx-auto relative top-0">
-    <div><Backgroud/></div>
+    <div className=""><Backgroud/></div>
     <div className="nav sticky z-10 top-0"><Navbar/></div>
     <div className="home bg-blue-50 h-[130vh] lg:h-[100vh]"><Nilesh /></div>
     <div className="bg-gray-500 h-1 w-full"></div>
