@@ -12,3 +12,9 @@ body{
     margin: 0;
     padding: 0;
 }
+/* styles/globals.css */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}

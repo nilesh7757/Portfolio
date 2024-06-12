@@ -48,7 +48,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      <nav className="header bg-blue-100 lg:justify-between justify-center items-center flex px-10 py-3 w-[100vw] min-w-[100vw]">
+      <nav className="header sticky top-0 bg-blue-100 lg:justify-between justify-center items-center flex px-10 py-3 w-[100vw] min-w-[100vw]">
         <div className="text-2xl bg-black text-white size-10 flex justify-center items-center font-bold p-6 rounded-full">
           NM
         </div>
