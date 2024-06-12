@@ -10,3 +10,9 @@
 body{
     overflow-x: hidden;
 }
+/* styles/globals.css */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
