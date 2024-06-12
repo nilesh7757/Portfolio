@@ -15,13 +15,27 @@ const AboutMe = () => {
       whileHover={{
         scale:"1.05"
       }}
+      whileInView={{opacity:1,x:0}} 
+        initial={{
+          x:-100,opacity:0,
+        }} 
+        transition={{
+          duration:0.5,
+        }}
       className="Box lg:relative lg:left-48 rounded-lg h-[80] overflow-hidden w-[450] mt-7 bg-red-500  border-2 border-neutral-600 "><Image
       src={"./About.png"}
       width={"250"}
       height={"30"}
       alt='About'
       ></Image></motion.div>
-      <motion.div 
+      <motion.div
+      whileInView={{opacity:1,x:0}} 
+        initial={{
+          x:100,opacity:0,
+        }} 
+        transition={{
+          duration:0.5,
+        }}
       whileHover={{
         scale:"1.05"
       }}
@@ -33,6 +47,13 @@ const AboutMe = () => {
     </div>
       <div className="btn w-full flex justify-center mt-10 lg:mt-5">
       <motion.button
+       whileInView={{opacity:1,y:0}} 
+       initial={{
+         y:-100,opacity:0,
+       }} 
+       transition={{
+         duration:0.5,
+       }}
        whileHover={{
         scale:1.05,
        }}

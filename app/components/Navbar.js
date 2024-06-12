@@ -38,6 +38,9 @@ const Navbar = () => {
             }}
             exit={{
               clipPath: "circle(0% at 3.5% 3.5%)",
+              transition:{
+                delay:1,
+              }
             }}
             transition={{
               duration: 0.7,
@@ -49,9 +52,24 @@ const Navbar = () => {
       </AnimatePresence>
 
       <nav className="header bg-blue-100 lg:justify-between justify-center items-center flex px-10 py-3 w-[100vw] min-w-[100vw]">
-        <div className="text-2xl bg-black text-white size-10 flex justify-center items-center font-bold p-6 rounded-full">
-          NM
-        </div>
+        <motion.div 
+          initial={{y:-100,opacity:0}}
+          animate={{y:1,opacity:1}}
+          transition={{duration:0.25}}
+          className="text-2xl bg-black text-white size-10 flex justify-center items-center font-bold p-6 rounded-full">
+          <motion.span
+           initial={{x:-100,opacity:0,color:"#000000"}}
+           animate={{x:0,opacity:1,color:"#FFFFFF"}}
+           transition={{duration:0.5,delay:0.5}}
+          
+          >N</motion.span>
+          <motion.span
+            initial={{x:100,opacity:0,color:"#000000"}}
+            animate={{x:0,opacity:1,color:"#FFFFFF"}}
+            transition={{duration:0.5,delay:0.5}}
+          
+          >M</motion.span>
+        </motion.div>
         <div className="">
           <ul className="flex Navbar text-xl gap-4">
             <li className="hover:font-bold hover:text-blue-500">
