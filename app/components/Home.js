@@ -47,7 +47,7 @@ const Nilesh = ()=>{
         opacity:"0",
         y:-20,
       }}
-      whileInView={{
+      animate={{
         opacity:"1",
         y:0
       }}

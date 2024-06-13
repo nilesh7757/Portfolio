@@ -8,6 +8,14 @@ import HorizontalNav from "./HorizontalNav";
 import { AnimatePresence, motion } from "framer-motion";
 import "./Navbar.css";
 
+const variants = (delay) =>({
+  initial:{y:-100,opacity:0},
+  animate:{y:0,opacity:1,transition:{
+    delay:delay,
+    duration:0.5,
+  }}
+})
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setVisible] = useState(false);
@@ -72,21 +80,41 @@ const Navbar = () => {
         </motion.div>
         <div className="">
           <ul className="flex Navbar text-xl gap-4">
-            <li className="hover:font-bold hover:text-blue-500">
+            <motion.li 
+              variants={variants(0.1)}
+              initial = "initial"
+              animate = "animate"
+              className="hover:font-bold hover:text-blue-500">
               <Link href="#Home">Home</Link>
-            </li>
-            <li className="hover:font-bold hover:text-blue-500">
+            </motion.li>
+            <motion.li 
+               variants={variants(0.2)}
+               initial = "initial"
+               animate = "animate"
+              className="hover:font-bold hover:text-blue-500">
               <Link href="#About">About Me</Link>
-            </li>
-            <li className="hover:font-bold hover:text-blue-500">
+            </motion.li>
+            <motion.li 
+               variants={variants(0.3)}
+               initial = "initial"
+               animate = "animate"
+              className="hover:font-bold hover:text-blue-500">
               <Link href="#skill">Skills</Link>
-            </li>
-            <li className="hover:font-bold hover:text-blue-500">
+            </motion.li>
+            <motion.li 
+               variants={variants(0.4)}
+               initial = "initial"
+               animate = "animate"
+              className="hover:font-bold hover:text-blue-500">
               <Link href="#">Education</Link>
-            </li>
-            <li className="hover:font-bold hover:text-blue-500">
+            </motion.li>
+            <motion.li 
+               variants={variants(0.5)}
+               initial = "initial"
+               animate = "animate"
+              className="hover:font-bold hover:text-blue-500">
               <Link href="#">Contact Me</Link>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </nav>
