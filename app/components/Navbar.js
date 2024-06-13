@@ -6,14 +6,22 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { HiX } from "react-icons/hi";
 import HorizontalNav from "./HorizontalNav";
 import { AnimatePresence, motion } from "framer-motion";
+// import { useScroll } from "framer-motion";
 import "./Navbar.css";
+
+// const {scrollYProgress} = useScroll()
 
 const variants = (delay) =>({
   initial:{y:-100,opacity:0},
   animate:{y:0,opacity:1,transition:{
     delay:delay,
     duration:0.5,
-  }}
+  }},
+  hover:{
+    fontWeight:700,
+    scale:1.05,
+    color:"#3b82f6"
+  }
 })
 
 const Navbar = () => {
@@ -59,7 +67,9 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      <nav className="header bg-blue-100 lg:justify-between justify-center items-center flex px-10 py-3 w-[100vw] min-w-[100vw]">
+      <motion.nav 
+      initial
+      className="header bg-blue-100 lg:justify-between justify-center items-center flex px-10 py-3 w-[100vw] min-w-[100vw]">
         <motion.div 
           initial={{y:-100,opacity:0}}
           animate={{y:1,opacity:1}}
@@ -84,40 +94,45 @@ const Navbar = () => {
               variants={variants(0.1)}
               initial = "initial"
               animate = "animate"
-              className="hover:font-bold hover:text-blue-500">
+              whileHover="hover"
+              >
               <Link href="#Home">Home</Link>
             </motion.li>
             <motion.li 
                variants={variants(0.2)}
                initial = "initial"
-               animate = "animate"
-              className="hover:font-bold hover:text-blue-500">
+              animate = "animate"
+              whileHover="hover"
+              >
               <Link href="#About">About Me</Link>
             </motion.li>
             <motion.li 
                variants={variants(0.3)}
                initial = "initial"
-               animate = "animate"
-              className="hover:font-bold hover:text-blue-500">
+              animate = "animate"
+              whileHover="hover"
+              >
               <Link href="#skill">Skills</Link>
             </motion.li>
             <motion.li 
                variants={variants(0.4)}
                initial = "initial"
                animate = "animate"
-              className="hover:font-bold hover:text-blue-500">
+               whileHover="hover"
+               >
               <Link href="#">Education</Link>
             </motion.li>
             <motion.li 
                variants={variants(0.5)}
                initial = "initial"
                animate = "animate"
-              className="hover:font-bold hover:text-blue-500">
+               whileHover="hover"
+               >
               <Link href="#">Contact Me</Link>
             </motion.li>
           </ul>
         </div>
-      </nav>
+      </motion.nav>
 
       <div
         className="hanger fixed left-4 top-7 cursor-pointer"
