@@ -11,11 +11,14 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { Duru_Sans, Poppins } from 'next/font/google';
 import { animate, motion } from 'framer-motion';
+import Typed from 'typed.js';
+import { useRef,useEffect } from 'react';
 const inter = Poppins({
   subsets: ['latin-ext'],
   display: 'swap',
   weight:'700',
 })
+
 
 const iconVariants = (duration) =>({
   initial:{y: -5},
@@ -39,6 +42,22 @@ const Delay = (delay,xVal) =>({
 });
 
 const Nilesh = ()=>{
+  const el = useRef(null)
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['FullStack <span style="color:red">Webdevloper</span>', 'Android <span style="color:red">Webdevloper</span>','A.I. <span style="color:red">Webdevloper</span>'],
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 500,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
     <div id="#Home" className="home w-[100vw] min-w-[100vw] lg:w-[90%] lg:h-screen h-[120vh] mx-auto relative top-14  ">
@@ -67,7 +86,7 @@ const Nilesh = ()=>{
           alt='Nileshmori'
         />
         </motion.div>
-      <div className="s-intro absolute lg:left-11 text-5xl font-bold flex flex-col gap-y-5">
+      <div className="s-intro absolute  lg:left-11 md:text-5xl sm:text-4xl text-3xl font-bold flex flex-col gap-y-5">
         <motion.h1
           variants={Delay(1,100)}
           initial="hidden"
@@ -83,13 +102,16 @@ const Nilesh = ()=>{
           variants={Delay(2,100)}
           initial="hidden"
           animate="visible"
-        ><span className='text-red-500'>Fullstack</span> Webdevloper</motion.h1>
+        >
+          <span ref={el}></span>
+          {/* <span className='text-red-500'>Fullstack</span> Webdevloper */}
+        </motion.h1>
         <motion.button 
         whileHover={{scale:"1.05"}} 
         variants={Delay(2.25,-100)}
         initial="hidden"
         animate="visible"
-        className='bg-blue-500 hover:bg-blue-800 text-xl w-fit  px-5 py-2 rounded-lg text-white'><Link className='flex items-center gap-3' href="#About">About Me <FaLocationArrow  /></Link></motion.button>
+        className='bg-blue-500 hover:bg-blue-800 md:text-xl text-lg w-fit  px-5 py-2 rounded-lg text-white'><Link className='flex items-center gap-3' href="#About">About Me <FaLocationArrow  /></Link></motion.button>
       <motion.div 
         variants={Delay(2.5,100)}
         initial="hidden"

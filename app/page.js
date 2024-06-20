@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Backgroud from "./components/backgroud";
 import Skills from "./components/Skills";
+import Form from "./components/Form";
 export default function Home() {
   return (
    <>
@@ -17,6 +18,9 @@ export default function Home() {
     <div className="bg-gray-500 h-1 w-full"></div>
     <div className="home bg-green-50"><Skills /></div>
     <div className="bg-gray-500 h-1 w-full"></div>
+    <div className=""><Form/></div>
+    <div className="bg-gray-500 h-1 w-full"></div>
+
 
 
 
